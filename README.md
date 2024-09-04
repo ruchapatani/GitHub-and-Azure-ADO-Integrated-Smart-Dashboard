@@ -21,7 +21,11 @@ Before you begin the installation process, make sure you have the following prer
 
 Navigate to the project directory and install the required dependencies using npm
 
-### Step 3: Run the Micro Frontend
+### Kendo Licensing
+
+Create a file for kendo-ui-license.txt
+
+### Run the Micro Frontend
 
 To run use the following command:
 
@@ -30,5 +34,7 @@ npm start
 ```
 
 This will start a development server, and you can access the application in your web browser at http://localhost:3000.
+
+NOTE: This is the UI - ReactJS code provided, Please wire it up with the AWS lambda / dotnet API calls. I have provided the sample for Github and ADO calls including the constants. 
 
 
