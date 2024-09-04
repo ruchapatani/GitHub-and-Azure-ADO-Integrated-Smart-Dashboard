@@ -2,13 +2,6 @@
 
 </div>
 
-<div align="center">
-	<h1>
-		<a >InsightHub App [🚀]</a>
-	</h1>
-</div>
-
-
 ## Vision 🌱
 Develop a customizable GitHub Insightful Dashboard with ADO mapping that has Project overview from GitHub and insights from the data points provided by GitHub. An easy to read refer guide for Project overview.
 
