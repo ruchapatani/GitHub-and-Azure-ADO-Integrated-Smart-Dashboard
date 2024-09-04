@@ -1,0 +1,170 @@
+@import './base/base';
+@import './base/icon';
+@import './abstracts/breakpoints';
+
+body {
+  margin: 0;
+  background-color: $body-bg-color;
+}
+.k-card-title {
+  color: $topbar-title-color;
+}
+.k-form {
+  padding: 14px 16px;
+}
+
+.page-title,
+.k-card-header {
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: $component-border;
+  padding: 14px 16px;
+  color: $topbar-title-color;
+  h4 {
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial;
+    line-height: 1.25;
+    font-weight: 500;
+  }
+  &.page-button-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+/* Styling for TopBar Header in mobile/tablet view*/
+.header-bold {
+  margin: 0;
+  font-size: 24px;
+  font-family: Arial;
+  line-height: 1.25;
+  font-weight: 500;
+  color: $white-color;
+}
+
+.page {
+  margin: 10px;
+  padding: 0;
+  border-color: $component-border;
+  color: $component-text;
+  background-color: $white-color;
+  border-radius: 4px;
+  outline: 0;
+  box-shadow: unset;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0.7px 0.7px 0.5px rgba(0, 0, 0, 0.04),
+    1.7px 1.7px 1.2px rgba(0, 0, 0, 0.03),
+    3.1px 3.1px 2.1px rgba(0, 0, 0, 0.025),
+    5.1px 5.1px 3.5px rgba(0, 0, 0, 0.022),
+    8.5px 8.5px 5.8px rgba(0, 0, 0, 0.018),
+    14.8px 14.8px 10.2px rgba(0, 0, 0, 0.015),
+    32px 32px 22px rgba(0, 0, 0, 0.01);
+  .card-detail-content {
+    .action-buttons-container {
+      a {
+        text-decoration: none !important;
+      }
+    }
+    .card-title-header {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      background: $white-color;
+      border-color: rgba(0, 0, 0, 0.12);
+      color: rgba(0, 0, 0, 0.87);
+      background-color: $white-color;
+      .page-title.page-button-title {
+        border: 0;
+      }
+    }
+
+    .k-card {
+      &.Separate-Card {
+        box-shadow: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        .k-card-title {
+          font-size: 14px;
+          font-weight: 700;
+          color: $wr-card-title-color;
+        }
+      }
+    }
+  }
+}
+@include media('<=phone') {
+  .page {
+    margin: 0;
+    padding: 0;
+  }
+}
+// consistent styling for button groups
+.k-button-group {
+  box-shadow: none;
+}
+
+.rounded-checkbox {
+  &.k-checkbox,
+  input[type='checkbox'] {
+    border: 2px solid $grey-color;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    :checked {
+      background-color: $primary;
+      border-color: $primary;
+      color: $white-color;
+    }
+  }
+}
+
+
+.k-dialog-actions {
+  margin: 0;
+  border-width: 1px 0 0;
+  border-color: inherit;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 8px 8px;
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: inherit;
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+.k-window-titlebar {
+  padding: 12px 16px;
+  border-color: inherit;
+  border-width: 0 0 1px;
+}
+.card-col {
+  &.switchable {
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+    strong.heading {
+      margin-left: 12px;
+    }
+  }
+}
+@include media('<l-desktop') {
+  .k-tooltip {
+    visibility: hidden;
+  }
+}
+.hide-network-icon {
+  display: none;
+}

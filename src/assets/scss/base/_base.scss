@@ -1,0 +1,34 @@
+@import './../abstracts/variables';
+@import '~@progress/kendo-theme-material/dist/all.scss';
+
+// TODO update later
+body {
+    @extend .k-body;
+  }
+  h1 {
+    @extend .k-h1;
+  }
+  h2 {
+    @extend .k-h2;
+  }
+  h3 {
+    @extend .k-h3;
+  }
+  h4 {
+    @extend .k-h4;
+  }
+  h5 {
+    @extend .k-h5;
+  }
+  h6 {
+    @extend .k-h6;
+  }
+  p {
+    @extend .k-paragraph;
+  }
+  pre {
+    @extend .k-pre;
+  }
+  code {
+    @extend .k-code;
+  }

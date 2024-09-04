@@ -1,0 +1,15 @@
+/** Add SVG Icons Styling **/
+@mixin icon($width, $height, $svg) {
+  &::before {
+    content: url($svg);
+    width: $width;
+    height: $height;
+  }
+}
+/** Badge Color Mixing **/
+@mixin badgeColor($currentStatus, $nextStatus, $currentColor, $nextColor) {
+  &.#{$currentStatus}-#{$nextStatus} {
+    background: transparent
+      linear-gradient(to right, $currentColor 14%, $nextColor 28%);
+  }
+}

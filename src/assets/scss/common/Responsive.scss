@@ -1,0 +1,196 @@
+@import '../../../assets/scss/abstracts/variables';
+@import '../../../assets/scss/abstracts/breakpoints';
+
+#root[device-type='Desktop'] {
+  .wr-detail {
+    .card-actions-content {
+      .card-actions {
+        display: flex !important;
+      }
+    }
+  }
+  .layout-facility {
+    .alert.alert-suggestion {
+      margin-top: 16%;
+    }
+  }
+}
+#root[device-type='Tablet'] {
+  // add tablet based specific media queries based on resize worker
+  .k-notification-group {
+    &,
+    .k-notification-containe {
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .k-animation-container {
+      background: $white-color;
+      width: 100%;
+      .k-notification-container {
+        float: unset;
+      }
+    }
+  }
+  .layout-facility {
+    width: 100% !important;
+    .main-facility-label {
+      text-align: center;
+    }
+    .alert-suggestion {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  .slider-content-card {
+    .slider-card {
+      height: calc(100vh - 69px);
+      overflow: auto;
+      padding-bottom: 28px;
+      .k-card-body {
+        margin-bottom: 6em;
+      }
+    }
+    .content-slider-actions {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  .wr-detail {
+    background: none;
+    .card-actions-content {
+      display: grid !important;
+      position: fixed;
+      bottom: 0;
+      .card-actions {
+        position: fixed !important;
+        border-top: 2px solid $component-border;
+        box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%),
+          0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+      }
+    }
+    .card-detail-content {
+      margin-bottom: 136px;
+    }
+  }
+
+  //landscape orientation css styles
+  &[device-orientation='Landscape'] {
+    .slider,
+    .slider-content-card {
+      width: 600px;
+      .content-slider-actions {
+        width: 600px;
+      }
+    }
+    .wr-detail {
+      .card-actions-content {
+        .card-actions {
+          justify-content: flex-end;
+          display: grid !important;
+        }
+      }
+    }
+  }
+  // portrait orientation css styles
+  &[device-orientation='Portrait'] {
+    .slider,
+    .slider-content-card {
+      width: 100%;
+      .content-slider-actions {
+        width: 100%;
+      }
+    }
+    @include media('<=phone') {
+      .home-page {
+        .k-tilelayout {
+          &.k-grid-flow-col {
+            grid-template-columns: repeat(2, minmax(0px, 1fr)) !important;
+          }
+        }
+      }
+    }
+  }
+}
+#root[device-type='Phone'] {
+  // add phone based specific media queries based on resize worker
+  .k-notification-group {
+    &,
+    .k-notification-containe {
+      width: 100%;
+    }
+    .k-animation-container {
+      background: $white-color;
+      width: 100%;
+      .k-notification-container {
+        float: unset;
+      }
+    }
+  }
+  .slider,
+  .slider-content-card {
+    width: 100%;
+    .slider-card {
+      height: calc(100vh - 69px);
+      overflow: auto;
+      padding-bottom: 28px;
+    }
+    .content-slider-actions {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  .wr-detail {
+    background: none;
+    .card-actions-content {
+      display: grid !important;
+      position: fixed;
+      bottom: 0;
+      .card-actions {
+        position: fixed !important;
+        border-top: 1px solid $component-border;
+        box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%),
+          0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+      }
+    }
+    .card-detail-content {
+      margin-bottom: 136px;
+    }
+  }
+  .layout-facility {
+    .alert-suggestion {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .main-facility-label {
+      text-align: center;
+    }
+  }
+  //landscape orientation css styles
+  &[device-orientation='Landscape'] {
+    .drawer-wrapper {
+      &.drawer-active {
+        .facility-drawer-item {
+          position: sticky;
+        }
+      }
+    }
+  }
+  &[device-orientation='Portrait'] {
+    .drawer-wrapper {
+      &.drawer-active {
+        .facility-drawer-item {
+          bottom: 49px;
+        }
+      }
+    }
+    .home-page {
+      .k-tilelayout {
+        &.k-grid-flow-col {
+          grid-template-columns: repeat(1, minmax(0px, 1fr)) !important;
+        }
+      }
+    }
+  }
+}

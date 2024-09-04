@@ -1,0 +1,26 @@
+/* dimensions for devices in portrait mode */
+$breakpoints: (
+  'sm-phone': 320px,
+  'l-phone': 420px,
+  'phone': 576px,
+  's-tablet': 700px,
+  'tablet': 820px,
+  'laptop': 992px,
+  'desktop': 1024px,
+  'l-desktop': 1200px,
+  'xl-desktop': 1440px,
+  'xxl-desktop': 1920px,
+) !default;
+$tablet-landscape-mode: '>=560px', '<1180px', 'landscape';
+$tablet-portrait-mode: '>=560px', '<1180px', 'portrait';
+$tablet-mode: '>=560px', '<820px';
+$tablet-only-portrait-mode: '<820px', 'portrait';
+$sm-tablet-only-portrait-mode: '>500px', '<696px', 'portrait';
+$phone-landscape-mode: '<560px', 'landscape';
+$phone-portrait-mode: '<560px', 'portrait';
+$sm-phone-portrait-mode: '>300px', '<=400px', 'portrait';
+$x-sm-phone-portrait-mode: '>200px', '<=300px', 'portrait';
+$lg-phone-portrait-mode: '>325px', '<=475', 'portrait';
+$laptop-landscape-mode: '<1180px', 'landscape';
+
+@import '/node_modules/include-media/dist/_include-media.scss';

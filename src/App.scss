@@ -1,0 +1,301 @@
+/* User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto; /* Center the user info section */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.user-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.user-avatar {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.user-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-details a:hover {
+  text-decoration: underline;
+}
+
+/* Commit Dashboard Section */
+.commit-dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.commit-summary {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.commit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.commit-item {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.commit-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.commit-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.commit-item a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Customize the scrollbar */
+.commit-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.commit-details::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.commit-details::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.commit-details::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+  .commit-dashboard,
+  .user-info {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .commit-dashboard,
+  .user-info {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .user-details {
+    margin-right: 15px;
+  }
+
+  .avatar-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .commit-item {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .commit-dashboard,
+  .user-info {
+    padding: 10px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-details {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .avatar-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .commit-item {
+    font-size: 12px;
+  }
+}
+
+/* Branches Dashboard Section */
+.branches-dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.branch-summary {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.branch-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.branch-item {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.branch-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.branch-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.branch-item a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Customize the scrollbar */
+.branch-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.branch-details::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.branch-details::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.branch-details::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+  .branches-dashboard {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .branches-dashboard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .branch-item {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branches-dashboard {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .branch-item {
+    font-size: 12px;
+  }
+}
+

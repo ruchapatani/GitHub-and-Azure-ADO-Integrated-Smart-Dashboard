@@ -1,0 +1,85 @@
+@import "../../../assets/scss/abstracts/variables";
+
+.login-logo {
+  width: 140px;
+}
+.login-title {
+  font-size: 26px;
+  color: white;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.36px;
+}
+.login-button {
+  padding: 5px 80px !important;
+  background-color: white !important;
+  color: #013c6c !important;
+  border: none;
+  text-transform: none;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 10px 5px 5px lightgray;
+  opacity: 0.09;
+}
+.bg-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  .login-rside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white !important;
+  }
+  .login-fside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      162deg,
+      #013c6c 0%,
+      #2385DB 85%,
+    );
+    color: white !important;
+  }
+}
+.login-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.keyboard-close {
+    justify-content: start;
+    margin-top: 20px;
+  }
+  width: 100%;
+  .login-logo {
+    margin-bottom: 15px;
+  }
+}
+.login-grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}

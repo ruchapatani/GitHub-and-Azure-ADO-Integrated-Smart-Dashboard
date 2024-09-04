@@ -1,0 +1,112 @@
+@import './../abstracts/variables';
+@import './../abstracts/breakpoints';
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  flex-shrink: 1;
+}
+
+.button-wrapper {
+  .k-rounded-md:first-child {
+    margin-left: 0px;
+  }
+  .k-button-group {
+    .k-button {
+      border-color: $component-border;
+    }
+  }
+}
+
+@include media('<=s-tablet') {
+  .gridfilter-topbar {
+    .button-wrapper {
+      .k-button-text {
+        display: none;
+      }
+    }
+  }
+}
+
+.k-filtercell-operator {
+  height: 20px;
+  display: flex;
+  .k-dropdown-operator {
+    padding: 0 !important;
+  }
+}
+
+.k-filtercell {
+  .k-button {
+    border: none;
+    box-shadow: none;
+    background: none !important;
+  }
+
+  span.k-dropdownlist.k-picker.k-dropdown-operator.k-picker-md.k-rounded-md.k-picker-solid {
+    vertical-align: inherit;
+  }
+  span.k-button-icon.k-icon.k-i-filter-clear,
+  .k-color-picker .k-button-icon,
+  .k-dropdown-operator .k-button-icon {
+    font-size: 20px;
+  }
+  .k-color-picker,
+  .k-dropdown-operator,
+  .k-color-picker {
+    width: 20px !important;
+    background-color: transparent !important;
+    box-shadow: none;
+    border: none !important;
+    .k-button-icon {
+      border: none !important;
+      background-color: transparent !important;
+      font-size: 20px;
+      box-shadow: none;
+    }
+  }
+  .k-input,
+  .k-picker,
+  span {
+    .k-button {
+      width: 18px !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      box-shadow: none;
+      margin-right: 5px;
+    }
+  }
+  .k-filtercell-wrapper {
+    .k-button {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+}
+.main-wrapper {
+  .k-tabstrip {
+    .k-content {
+      padding: 0px 0px;
+    }
+  }
+}
+
+.k-input,
+.k-textbox,
+textarea.k-textarea,
+.k-multiselect,
+.k-dropdownlist,
+.k-dateinput {
+  border-color: $component-border;
+}

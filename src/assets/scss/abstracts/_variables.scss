@@ -1,0 +1,251 @@
+@import '~@progress/kendo-theme-material/scss/_variables.scss';
+
+//Kendo Base Theme Colors
+$primary: #3f51b5;
+$secondary: #e51a5f;
+$warning: #ffc000;
+$tertiary: #00695c;
+$info: #0058e9;
+$success: #37b400;
+$error: #f31700;
+$dark: #424242;
+$light: #f5f5f5;
+
+//Kendo Component Color
+$component-bg: white;
+$component-text: rgba(0, 0, 0, 0.87);
+$component-border: rgba(0, 0, 0, 0.12);
+$line-height: 2;
+
+//Kendo Grid Colors
+$grid-border: #e2e6ec;
+$grid-text: #354052;
+$grid-header-text: #7f8fa4;
+
+//colors
+$white-color: rgb(255, 255, 255);
+$black-color: rgba(0, 0, 0);
+$grey-color: #9e9d9d;
+$dark-grey-color: #3b3b3b;
+$light-grey-color: #9e9d9d;
+$column-color: #212121;
+$green-color: #489c4b;
+$red-color: #b93838;
+$orange-color: #f6872d;
+$light-orange-color: #fd8725;
+$success-color: #67bd48;
+$blue-color: #4e5eb8;
+$gradient-blue-primary-color: #3f51b5;
+$gradient-blue-secondary-color: #20295b;
+$gradient-grey-primary-color: #414346;
+$gradient-grey-secondary-color: #8c8c92;
+$light-blue-color: #d8dcf0;
+// Body
+$body-bg-color: #f5f5f5;
+
+/// Base font size across all components.
+$font-size: 14px;
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 20px;
+
+$kendo-list-font-size: 2rem;
+$drawer-item-font-size: 1em;
+$drawer-icon-size: 1em;
+
+// null is for default, it will pick default css from kendo theme
+$font-family: null;
+$font-family-monospace: null;
+$kendo-avatar-font-family: null;
+$kendo-avatar-font-size: $font-size;
+$base-text: null;
+
+// Input
+$input-color: #bebebe;
+
+// background
+$hovered-text: null;
+
+// Icons
+$icon-size: 16px;
+$icon-size-lg: 32px;
+$icon-spacing: null;
+
+// General Metrics
+$padding-x: null;
+$padding-y: null;
+
+// nav items
+$nav-item-margin: null;
+$nav-item-padding-x: $padding-x;
+$nav-item-padding-y: $padding-y;
+$nav-item-color: $component-text;
+$nav-item-active-color: $black-color;
+$nav-item-bg-color: #f9f9f9;
+$nav-item-mfont-size: 18px;
+$nav-item-icon-size: 22px;
+
+// table
+$table-cell-padding-x: null;
+$table-cell-padding-y: null;
+$header-cell-padding-x: null;
+$header-cell-padding-y: null;
+
+// chart
+$chart-font-family: null;
+$chart-font-size: null;
+$chart-font-size-sm: null;
+$chart-font-size-md: null;
+$chart-font-size-lg: null;
+$chart-line-height: null;
+
+// background
+$base-bg: null;
+$base-text: null;
+$base-border: null;
+$footer-bg-color: $white-color;
+
+// Header
+$header-bg: $base-bg;
+$header-text: $base-text;
+$header-border: $base-border;
+$header-gradient: null;
+
+$topbar-bg-color: $white-color;
+$topbar-border: #0000001a;
+$topbar-title-color: #354052;
+
+// headings
+$h1-font-size: null;
+$h1-font-family: null;
+$h1-line-height: null;
+$h1-font-weight: null;
+$h1-letter-spacing: null;
+$h1-margin: null;
+$h2-font-size: null;
+$h2-font-family: null;
+$h2-line-height: null;
+$h2-font-weight: null;
+$h2-letter-spacing: null;
+$h2-margin: null;
+$h3-font-size: null;
+$h3-font-family: null;
+$h3-line-height: null;
+$h3-font-weight: null;
+$h3-letter-spacing: null;
+$h3-margin: null;
+$h4-font-size: null;
+$h4-font-family: null;
+$h4-line-height: null;
+$h4-font-weight: null;
+$h4-letter-spacing: null;
+$h4-margin: null;
+$h5-font-size: null;
+$h5-font-family: null;
+$h5-line-height: null;
+$h5-font-weight: null;
+$h5-letter-spacing: null;
+$h5-margin: null;
+$h6-font-size: null;
+$h6-font-family: null;
+$h6-line-height: null;
+$h6-font-weight: null;
+$h6-letter-spacing: null;
+$h6-margin: null;
+
+// paragraph
+$paragraph-margin: null;
+$paragraph-font-size: null;
+$paragraph-font-family: null;
+$paragraph-line-height: null;
+$paragraph-font-weight: null;
+$paragraph-letter-spacing: null;
+
+// form
+$inline-form-element-width: null;
+$input-border-color: #8c8f94;
+$checkbox-border-color: $grid-border;
+
+//topbar
+$topbar-seprator-color: #ecd6d6;
+$topbar-background-color: #f1f1f1;
+$topbar-item-background: rgba(0, 0, 0, 0.07);
+
+//Filter Input Color:
+$filter-bg-color: #f2f3f5;
+$filter-font-color: #354052;
+
+//Label Colors
+$label-default-color: #fd8725;
+
+//Alert Message
+//Error
+$error-message-Color: $error;
+$error-message-bg: #f8d7da;
+$error-message-border: #f5c6cb;
+
+//Warning
+$warning-message-Color: $warning;
+$warning-message-bg: #fff3cd;
+$warning-message-border: #ffeeba;
+
+//Info
+$info-message-Color: $info;
+$info-message-bg: #d1ecf1;
+$info-message-border: #bee5eb;
+
+//Primary
+$primary-message-Color: $primary;
+$primary-message-bg: #cce5ff;
+$primary-message-border: #b8daff;
+
+//Secondary
+$secondary-message-Color: $secondary;
+$secondary-message-bg: #e2e3e5;
+$secondary-message-border: #d6d8db;
+
+//Success
+$success-message-Color: $success;
+$success-message-bg: #d4edda;
+$success-message-border: #c3e6cb;
+
+//Slider Colors
+$slider-background-color: #000000de;
+
+//Notification colors
+
+//Error
+$errorTitleColor: #b93838;
+$errorbgColor: #fcf5f5;
+$errorDescColor: #3b3b3b;
+
+//Warning
+$warningTitleColor: #ffc000;
+$warningbgColor: #fffcf2;
+
+//success
+$successTitleColor: #489c4b;
+$successbgColor: #f5faf6;
+
+//info
+$infoTitleColor: #3f51b5;
+$infobgColor: #f2f6fe;
+
+//Default
+$defaultTitleColor: #363636;
+$defaultbgColor: #fefefe;
+
+$notiDescColor: #646464;
+$notiCloseIcon: #bebebe;
+
+//App Notification
+
+//Topbar
+$topbar-badge-bg: #d8dcf0;
+$topbar-badge-color: rgb(34 43 97);
+$topbar-badge-border: #232d64;
+
+//WR Detail
+$wr-card-title-color: #495ab8;

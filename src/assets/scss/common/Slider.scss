@@ -1,0 +1,39 @@
+@import './../abstracts/variables';
+@import '../abstracts/breakpoints';
+
+.add-user-card-actions {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid $component-border;
+  padding: 16px 24px;
+  background-color: $white-color;
+  z-index: 99;
+}
+.slider-card {
+  .k-button-group {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    .k-button.k-selected {
+      background-color: $slider-background-color;
+      color: $white-color;
+    }
+  }
+  .k-form {
+    .k-label {
+      display: none;
+    }
+  }
+}
+@include media('<phone') {
+  .content-slider-actions {
+    .action-button {
+      span {
+        &.k-button-text {
+          display: none;
+        }
+      }
+    }
+  }
+}

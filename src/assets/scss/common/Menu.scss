@@ -1,0 +1,65 @@
+.divider {
+  font-size: 20px;
+  margin: 0 4px;
+  vertical-align: middle;
+  min-height: 1.5em;
+}
+@import '../abstracts/variables';
+
+.k-toolbar {
+  align-items: center;
+  z-index: 99;
+  .toolbar-icon-wrapper {
+    padding-top: calc(1.55 * 16px);
+    margin-left: 10px;
+    cursor: pointer;
+    .toolbar-setting-selector {
+      font-size: 24px;
+    }
+  }
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.toolbar-grid-wrapper,
+.toolbar-card-wrapper {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.2s linear;
+  position: relative;
+  top: -100px;
+  z-index: 1;
+  margin: 0;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $component-border;
+  .filter {
+    display: flex;
+    align-items: flex-end;
+  }
+  .named-filters {
+    color: red;
+  }
+  &.toolbar-active {
+    margin-bottom: 20px;
+    max-height: 200px;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    opacity: 1;
+    top: 0;
+    padding: 0 1% 1% 1%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .k-floating-label-container {
+    width: 20%;
+    margin-right: 14px;
+  }
+}

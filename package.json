@@ -1,0 +1,101 @@
+{
+  "name": "rucha app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@progress/kendo-licensing": "^1.2.2",
+    "@progress/kendo-react-buttons": "^5.5.0",
+    "@progress/kendo-react-charts": "^5.5.0",
+    "@progress/kendo-react-common": "^8.2.0",
+    "@progress/kendo-react-grid": "^8.2.0",
+    "@progress/kendo-react-intl": "^5.19.0",
+    "@progress/kendo-react-layout": "^5.5.0",
+    "@progress/kendo-react-notification": "^5.5.0",
+    "@progress/kendo-react-progressbars": "^5.5.0",
+    "@progress/kendo-svg-icons": "^1.4.0",
+    "@progress/kendo-theme-material": "6.4.0",
+    "@progress/kendo-data-query": "^1.6.0",
+    "@progress/kendo-react-animation": "^5.5.0",
+    "@progress/kendo-react-data-tools": "^5.5.0",
+    "@progress/kendo-react-dateinputs": "^5.5.0",
+    "@progress/kendo-react-dropdowns": "^5.5.0",
+    "@progress/kendo-react-treeview": "^5.5.0",
+    "@progress/kendo-react-listview": "^5.5.0",
+    "@progress/kendo-drawing": "^1.16.3",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.46",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.5.0",
+    "buffer": "^6.0.3",
+    "crypto-js": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^3.1.4",
+    "react-redux": "^8.1.3",
+    "react-scripts": "5.0.1",
+    "sass": "^1.66.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=dev webpack --config=webpack.config.dev.js ",
+    "build:qa": "cross-env NODE_ENV=qa webpack --config=webpack.config.qa.js ",
+    "build:prod": "cross-env NODE_ENV=prod webpack --config=webpack.config.prod.js ",
+    "build:local": "cross-env NODE_ENV=local webpack --config=webpack.config.local.js ",
+    "start": "webpack-dev-server --config=webpack.config.local.js --open --no-client-overlay",
+    "build": "webpack --mode production",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.11",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.3.0",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.48.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "react-router-dom": "^6.8.2",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.0",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

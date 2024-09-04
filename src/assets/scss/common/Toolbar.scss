@@ -1,0 +1,51 @@
+@import './../abstracts/variables';
+@import '../abstracts/breakpoints';
+
+.gridfilter-topbar {
+  padding: 14px 14px;
+  display: flow-root;
+  column-gap: 0.5em;
+  z-index: 99;
+  background-color: $white-color;
+  position: relative;
+  .k-toolbar {
+    box-shadow: none;
+  }
+  .menu-toolbar {
+    padding: 0px 1px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5em;
+    z-index: 99;
+    background-color: $white-color;
+    position: relative;
+
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+    input[type='checkbox' i] {
+      vertical-align: middle;
+      border: 1px solid $grid-border;
+      padding: 0px;
+      border-radius: 50%;
+    }
+    .checkbox-group {
+      span.k-button-text {
+        display: flex;
+        column-gap: 4px;
+      }
+    }
+  }
+}
+@include media('<=s-tablet') {
+  .menu-toolbar {
+    span {
+      .k-button-text {
+        display: none;
+      }
+    }
+  }
+}

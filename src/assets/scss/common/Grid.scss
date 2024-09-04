@@ -1,0 +1,255 @@
+@import './../abstracts/variables';
+
+/* color variables for round custom checkbox */
+$checkbox-background-color: $white-color;
+$checkbox-border-color: $grid-border;
+
+.grid-wrapper {
+  padding: 0 1% 0 1%;
+  margin-bottom: 14px;
+  .custom-toolbar {
+    float: right;
+    text-align: end;
+    .k-floating-label-container.k-empty {
+      margin-left: 10px;
+    }
+    .k-dropdownlist {
+      width: 200px;
+    }
+  }
+  .k-toolbar {
+    clear: both;
+  }
+  .k-grid {
+    border-top: 0;
+    .k-grid-header {
+      padding: 0;
+      tr {
+        background-color: rgba(0, 0, 0, 0.07);
+      }
+      th {
+        border-inline-start-color: $grid-border !important;
+      }
+      .k-grid-header-wrap {
+        border-right: 0;
+      }
+    }
+    .k-grid-content {
+      overflow: overlay;
+      padding-bottom: 2%;
+      z-index: 0;
+    }
+    td,
+    th {
+      border-bottom-color: $grid-border;
+    }
+    td {
+      color: $grid-text;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    th {
+      .k-column-title {
+        color: $grid-header-text;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+      }
+    }
+    .k-checkbox {
+      background-color: $checkbox-background-color;
+      border: 2px solid $checkbox-border-color;
+      border-radius: 50%;
+      cursor: pointer;
+      vertical-align: middle;
+      &:checked {
+        background-color: $primary;
+        border-color: $primary;
+        color: $checkbox-background-color;
+      }
+    }
+    &.Compact {
+      td {
+        padding: 2px 4px;
+        font-size: 11px;
+      }
+      .k-checkbox {
+        height: 13px;
+        width: 13px;
+      }
+      .k-grid-edit-row {
+        td {
+          white-space: nowrap;
+        }
+      }
+      .k-filter-row {
+        .k-filtercell {
+          input.k-input,
+          textarea.k-textarea {
+            padding: 8px 4px;
+            font-size: 11px;
+          }
+          .k-dropdownlist,
+          .k-dateinput {
+            padding: 0px 4px;
+            font-size: 11px;
+          }
+        }
+        span.k-input-inner {
+          padding: 8px 4px;
+        }
+        th {
+          padding: 0px 6px;
+        }
+      }
+      thead {
+        th {
+          padding: 8px 4px;
+        }
+      }
+      tbody {
+        .k-grid-edit-row td {
+          padding: 2px 4px;
+          font-size: 12px;
+        }
+        .action-buttons-container .action-icon-wrapper {
+          padding: 0 4px;
+          font-size: 12px;
+        }
+      }
+    }
+    &.Roomy {
+      .k-checkbox {
+        height: 16px;
+        width: 16px;
+      }
+
+      .k-filter-row {
+        .k-filtercell {
+          input.k-input,
+          textarea.k-textarea {
+            padding: 6px 6px;
+            font-size: 14px;
+          }
+          .k-dropdownlist,
+          .k-dateinput {
+            font-size: 14px;
+          }
+          .k-dateinput {
+            padding: 0px 6px;
+          }
+        }
+        span.k-input-inner {
+          padding: 6px 6px;
+        }
+        th {
+          padding: 0px 6px;
+        }
+      }
+    }
+    &.Comfortable {
+      td {
+        padding: 8px 8px;
+        font-size: 12px;
+      }
+      .k-checkbox {
+        height: 14.5px;
+        width: 14.5px;
+      }
+      .k-filter-row {
+        .k-filtercell {
+          input.k-input,
+          textarea.k-textarea {
+            padding: 6px 8px;
+            font-size: 12px;
+          }
+          .k-dropdownlist,
+          .k-dateinput {
+            font-size: 12px;
+            padding: 0px 8px;
+          }
+        }
+        span.k-input-inner {
+          padding: 6px 8px;
+        }
+        th {
+          padding: 0px 6px;
+        }
+      }
+      thead {
+        th {
+          padding: 16px 8px;
+        }
+      }
+      tbody {
+        .k-grid-edit-row td {
+          padding: 2px 8px;
+        }
+      }
+    }
+    .k-grid-edit-row {
+      .k-grid-edit-cell {
+        padding: 6px 6px;
+      }
+      input {
+        padding: 7px 5px;
+        font-size: 13px;
+      }
+    }
+    .k-pager-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .k-pager-numbers .k-link {
+        border-radius: 0;
+      }
+      .k-pager-info {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+.responsive-grid {
+  border-radius: 4px;
+  overflow: hidden;
+  .k-grid-pager {
+    border-color: #ededed;
+  }
+}
+
+.badge {
+  right: 0;
+  top: 0;
+  span {
+    display: inline-block;
+  }
+  .circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 9px;
+    display: inline-block;
+    background-color: $label-default-color;
+    vertical-align: text-bottom;
+  }
+}
+
+.hide {
+  display: none;
+}
+.Compact.dd-list-item {
+  font-size: 11px;
+}
+.Comfortable.dd-list-item {
+  font-size: 12px;
+}
+.k-grid-norecords {
+  text-align: left;
+  td {
+    padding: 0 0% 0 53em !important;
+  }
+}

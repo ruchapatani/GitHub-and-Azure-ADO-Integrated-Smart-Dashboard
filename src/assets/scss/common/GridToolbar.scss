@@ -1,0 +1,42 @@
+@import '../abstracts/variables';
+
+.k-toolbar {
+  align-items: center;
+  z-index: 99;
+  .toolbar-icon-wrapper {
+    padding-top: calc(1.55 * 16px);
+    margin-left: 10px;
+    .toolbar-setting-selector {
+      font-size: 24px;
+    }
+  }
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gridfilter-topbar {
+  padding: 14px 14px;
+  display: flow-root;
+  column-gap: 0.5em;
+  z-index: 99;
+  background-color: $white-color;
+  position: relative;
+  .topbar-left {
+    float: left;
+  }
+  .topbar-right {
+    float: right;
+  }
+  .filter-wrapper {
+    .filter-text {
+      font-size: 16px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+  }
+}

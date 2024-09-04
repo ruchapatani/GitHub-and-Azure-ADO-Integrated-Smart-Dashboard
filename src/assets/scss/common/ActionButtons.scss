@@ -1,0 +1,18 @@
+.grid-wrapper {
+  .action-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .k-button-group {
+      box-shadow: unset;
+    }
+    .action-icon-wrapper {
+      border: none;
+      font-size: 14px;
+      padding: 0px 8px;
+      border-radius: 4px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.notification-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.k-animation-container {
+  margin-top: 8px !important;
+}
+ 
+.k-menu-expand-arrow {
+  display: none !important;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+  color: #eff0f3;
+}
+
+.k-button k-button-md k-rounded-md k-button-solid k-button-solid-base {
+  padding: 0;
+}
+
+.k-badge-container {
+  margin-right: 8px;
+}
+
+.k-appbar {
+  height: 60px !important;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.header {
+  background: #013c6c !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px ,
+  rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}

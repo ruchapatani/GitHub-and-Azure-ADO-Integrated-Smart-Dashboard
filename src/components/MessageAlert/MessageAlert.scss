@@ -1,0 +1,42 @@
+@import '../../../../assets/scss/abstracts/variables';
+
+.alert {
+  margin-top: 1rem;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin: 0 14px;
+  margin-top: 10px;
+  &-danger {
+    color: $error-message-Color;
+    background-color: $error-message-bg;
+    border-color: $error-message-border;
+  }
+  &-primary {
+    color: $primary-message-Color;
+    background-color: $primary-message-bg;
+    border-color: $primary-message-border;
+  }
+  &-secondary {
+    color: $secondary-message-Color;
+    background-color: $secondary-message-bg;
+    border-color: $secondary-message-border;
+  }
+  &-success {
+    color: $success-message-Color;
+    background-color: $success-message-bg;
+    border-color: $success-message-border;
+  }
+  &-info {
+    color: $info-message-Color;
+    background-color: $info-message-bg;
+    border-color: $info-message-border;
+  }
+  &-warning {
+    color: $warning-message-Color;
+    background-color: $warning-message-bg;
+    border-color: $warning-message-border;
+  }
+}
